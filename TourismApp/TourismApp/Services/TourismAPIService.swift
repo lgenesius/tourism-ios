@@ -14,7 +14,7 @@ protocol TourismAPIService {
 
 enum APIError: Error, CustomNSError {
     case apiError
-    case invalidEndpoint
+    case invalidURL
     case invalidResponse
     case noData
     case serializationError
@@ -23,8 +23,8 @@ enum APIError: Error, CustomNSError {
         switch self {
             case .apiError:
                 return "Failed to fetch data"
-            case .invalidEndpoint:
-                return "Invalid endpoint"
+            case .invalidURL:
+                return "Invalid url"
             case .invalidResponse:
                 return "Invalid response"
             case .noData:
