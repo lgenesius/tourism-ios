@@ -14,6 +14,8 @@
 		E10B16D526A91C6600DD6AF8 /* TourismApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E10B16D326A91C6600DD6AF8 /* TourismApp.xcdatamodeld */; };
 		E10B16D726A91C6700DD6AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10B16D626A91C6700DD6AF8 /* Assets.xcassets */; };
 		E10B16DA26A91C6700DD6AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B16D826A91C6700DD6AF8 /* LaunchScreen.storyboard */; };
+		E10B16E926A91DA400DD6AF8 /* TourismAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16E826A91DA400DD6AF8 /* TourismAPI.swift */; };
+		E10B16EC26A91E9900DD6AF8 /* TourismAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16EB26A91E9900DD6AF8 /* TourismAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E10B16D626A91C6700DD6AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10B16D926A91C6700DD6AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E10B16DB26A91C6700DD6AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10B16E826A91DA400DD6AF8 /* TourismAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismAPI.swift; sourceTree = "<group>"; };
+		E10B16EB26A91E9900DD6AF8 /* TourismAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,10 @@
 			children = (
 				E10B16CA26A91C6600DD6AF8 /* AppDelegate.swift */,
 				E10B16CC26A91C6600DD6AF8 /* SceneDelegate.swift */,
+				E10B16EA26A91E7F00DD6AF8 /* Services */,
+				E10B16E426A91CDE00DD6AF8 /* Views */,
+				E10B16E326A91CD800DD6AF8 /* Controllers */,
+				E10B16E126A91CC100DD6AF8 /* Models */,
 				E10B16CE26A91C6600DD6AF8 /* ViewController.swift */,
 				E10B16D026A91C6600DD6AF8 /* Main.storyboard */,
 				E10B16D626A91C6700DD6AF8 /* Assets.xcassets */,
@@ -68,6 +76,60 @@
 				E10B16D326A91C6600DD6AF8 /* TourismApp.xcdatamodeld */,
 			);
 			path = TourismApp;
+			sourceTree = "<group>";
+		};
+		E10B16E126A91CC100DD6AF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E10B16E726A91D1100DD6AF8 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E10B16E326A91CD800DD6AF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E10B16E426A91CDE00DD6AF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E10B16E626A91CEB00DD6AF8 /* Cells */,
+				E10B16E526A91CE300DD6AF8 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E10B16E526A91CE300DD6AF8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E10B16E626A91CEB00DD6AF8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E10B16E726A91D1100DD6AF8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E10B16E826A91DA400DD6AF8 /* TourismAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E10B16EA26A91E7F00DD6AF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E10B16EB26A91E9900DD6AF8 /* TourismAPIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10B16E926A91DA400DD6AF8 /* TourismAPI.swift in Sources */,
 				E10B16CF26A91C6600DD6AF8 /* ViewController.swift in Sources */,
 				E10B16CB26A91C6600DD6AF8 /* AppDelegate.swift in Sources */,
 				E10B16CD26A91C6600DD6AF8 /* SceneDelegate.swift in Sources */,
+				E10B16EC26A91E9900DD6AF8 /* TourismAPIService.swift in Sources */,
 				E10B16D526A91C6600DD6AF8 /* TourismApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
