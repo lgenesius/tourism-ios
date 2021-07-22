@@ -19,6 +19,13 @@
 		E10B16EE26A9233000DD6AF8 /* TourismAPIFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16ED26A9233000DD6AF8 /* TourismAPIFetch.swift */; };
 		E10B16F026A9352E00DD6AF8 /* TourismList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16EF26A9352E00DD6AF8 /* TourismList.swift */; };
 		E10B16F226A94AAE00DD6AF8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B16F126A94AAE00DD6AF8 /* Home.storyboard */; };
+		E10B16F426A94AE100DD6AF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16F326A94AE100DD6AF8 /* HomeViewController.swift */; };
+		E10B16F626A9AA6700DD6AF8 /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B16F526A9AA6700DD6AF8 /* Bookmark.storyboard */; };
+		E10B16F826A9AA7600DD6AF8 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16F726A9AA7600DD6AF8 /* BookmarkViewController.swift */; };
+		E10B16FA26A9B08600DD6AF8 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B16F926A9B08600DD6AF8 /* About.storyboard */; };
+		E10B16FC26A9B0D300DD6AF8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16FB26A9B0D300DD6AF8 /* AboutViewController.swift */; };
+		E10B16FF26A9B53800DD6AF8 /* TourismTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16FD26A9B53800DD6AF8 /* TourismTableViewCell.swift */; };
+		E10B170026A9B53800DD6AF8 /* TourismTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10B16FE26A9B53800DD6AF8 /* TourismTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		E10B16ED26A9233000DD6AF8 /* TourismAPIFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismAPIFetch.swift; sourceTree = "<group>"; };
 		E10B16EF26A9352E00DD6AF8 /* TourismList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismList.swift; sourceTree = "<group>"; };
 		E10B16F126A94AAE00DD6AF8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E10B16F326A94AE100DD6AF8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E10B16F526A9AA6700DD6AF8 /* Bookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
+		E10B16F726A9AA7600DD6AF8 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		E10B16F926A9B08600DD6AF8 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		E10B16FB26A9B0D300DD6AF8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E10B16FD26A9B53800DD6AF8 /* TourismTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismTableViewCell.swift; sourceTree = "<group>"; };
+		E10B16FE26A9B53800DD6AF8 /* TourismTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +109,9 @@
 		E10B16E326A91CD800DD6AF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E10B16F326A94AE100DD6AF8 /* HomeViewController.swift */,
+				E10B16F726A9AA7600DD6AF8 /* BookmarkViewController.swift */,
+				E10B16FB26A9B0D300DD6AF8 /* AboutViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +119,7 @@
 		E10B16E426A91CDE00DD6AF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E10B170126A9B5BC00DD6AF8 /* XIB */,
 				E10B16E626A91CEB00DD6AF8 /* Cells */,
 				E10B16E526A91CE300DD6AF8 /* Storyboards */,
 			);
@@ -112,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				E10B16F126A94AAE00DD6AF8 /* Home.storyboard */,
+				E10B16F526A9AA6700DD6AF8 /* Bookmark.storyboard */,
+				E10B16F926A9B08600DD6AF8 /* About.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -119,6 +139,7 @@
 		E10B16E626A91CEB00DD6AF8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E10B16FD26A9B53800DD6AF8 /* TourismTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -139,6 +160,14 @@
 				E10B16ED26A9233000DD6AF8 /* TourismAPIFetch.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E10B170126A9B5BC00DD6AF8 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				E10B16FE26A9B53800DD6AF8 /* TourismTableViewCell.xib */,
+			);
+			path = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10B16DA26A91C6700DD6AF8 /* LaunchScreen.storyboard in Resources */,
+				E10B16F626A9AA6700DD6AF8 /* Bookmark.storyboard in Resources */,
+				E10B170026A9B53800DD6AF8 /* TourismTableViewCell.xib in Resources */,
+				E10B16FA26A9B08600DD6AF8 /* About.storyboard in Resources */,
 				E10B16D726A91C6700DD6AF8 /* Assets.xcassets in Resources */,
 				E10B16D226A91C6600DD6AF8 /* Main.storyboard in Resources */,
 				E10B16F226A94AAE00DD6AF8 /* Home.storyboard in Resources */,
@@ -214,9 +246,13 @@
 			files = (
 				E10B16EE26A9233000DD6AF8 /* TourismAPIFetch.swift in Sources */,
 				E10B16E926A91DA400DD6AF8 /* TourismAPI.swift in Sources */,
+				E10B16FC26A9B0D300DD6AF8 /* AboutViewController.swift in Sources */,
 				E10B16CF26A91C6600DD6AF8 /* ViewController.swift in Sources */,
 				E10B16F026A9352E00DD6AF8 /* TourismList.swift in Sources */,
+				E10B16F826A9AA7600DD6AF8 /* BookmarkViewController.swift in Sources */,
 				E10B16CB26A91C6600DD6AF8 /* AppDelegate.swift in Sources */,
+				E10B16FF26A9B53800DD6AF8 /* TourismTableViewCell.swift in Sources */,
+				E10B16F426A94AE100DD6AF8 /* HomeViewController.swift in Sources */,
 				E10B16CD26A91C6600DD6AF8 /* SceneDelegate.swift in Sources */,
 				E10B16EC26A91E9900DD6AF8 /* TourismAPIService.swift in Sources */,
 				E10B16D526A91C6600DD6AF8 /* TourismApp.xcdatamodeld in Sources */,

@@ -17,14 +17,5 @@ class ViewController: UIViewController {
         
         
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tourism.loadTourisms {
-            print(self.tourism.tourisms![0])
-        }
-        
-    }
 }
 
