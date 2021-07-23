@@ -10,10 +10,10 @@
 		E108F06426AA443900569D0E /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108F06326AA443900569D0E /* ImageLoaderService.swift */; };
 		E108F06626AA69A600569D0E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E108F06526AA69A600569D0E /* Detail.storyboard */; };
 		E108F06826AAAF7200569D0E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108F06726AAAF7200569D0E /* DetailViewController.swift */; };
+		E108F06C26AB149900569D0E /* Tourism+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108F06A26AB149900569D0E /* Tourism+CoreDataClass.swift */; };
+		E108F07026AB14C700569D0E /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108F06F26AB14C700569D0E /* CoreDataService.swift */; };
 		E10B16CB26A91C6600DD6AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16CA26A91C6600DD6AF8 /* AppDelegate.swift */; };
 		E10B16CD26A91C6600DD6AF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16CC26A91C6600DD6AF8 /* SceneDelegate.swift */; };
-		E10B16CF26A91C6600DD6AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16CE26A91C6600DD6AF8 /* ViewController.swift */; };
-		E10B16D226A91C6600DD6AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B16D026A91C6600DD6AF8 /* Main.storyboard */; };
 		E10B16D526A91C6600DD6AF8 /* TourismApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E10B16D326A91C6600DD6AF8 /* TourismApp.xcdatamodeld */; };
 		E10B16D726A91C6700DD6AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10B16D626A91C6700DD6AF8 /* Assets.xcassets */; };
 		E10B16DA26A91C6700DD6AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B16D826A91C6700DD6AF8 /* LaunchScreen.storyboard */; };
@@ -35,11 +35,11 @@
 		E108F06326AA443900569D0E /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
 		E108F06526AA69A600569D0E /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		E108F06726AAAF7200569D0E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E108F06A26AB149900569D0E /* Tourism+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tourism+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E108F06F26AB14C700569D0E /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		E10B16C726A91C6600DD6AF8 /* TourismApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourismApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10B16CA26A91C6600DD6AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E10B16CC26A91C6600DD6AF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E10B16CE26A91C6600DD6AF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E10B16D126A91C6600DD6AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E10B16D426A91C6600DD6AF8 /* TourismApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TourismApp.xcdatamodel; sourceTree = "<group>"; };
 		E10B16D626A91C6700DD6AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10B16D926A91C6700DD6AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E108F06926AB146D00569D0E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E108F06A26AB149900569D0E /* Tourism+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		E10B16BE26A91C6600DD6AF8 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +102,6 @@
 				E10B16E426A91CDE00DD6AF8 /* Views */,
 				E10B16E326A91CD800DD6AF8 /* Controllers */,
 				E10B16E126A91CC100DD6AF8 /* Models */,
-				E10B16CE26A91C6600DD6AF8 /* ViewController.swift */,
-				E10B16D026A91C6600DD6AF8 /* Main.storyboard */,
 				E10B16D626A91C6700DD6AF8 /* Assets.xcassets */,
 				E10B16D826A91C6700DD6AF8 /* LaunchScreen.storyboard */,
 				E10B16DB26A91C6700DD6AF8 /* Info.plist */,
@@ -107,6 +113,7 @@
 		E10B16E126A91CC100DD6AF8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E108F06926AB146D00569D0E /* CoreData */,
 				E10B16E726A91D1100DD6AF8 /* API */,
 			);
 			path = Models;
@@ -167,6 +174,7 @@
 				E10B16EB26A91E9900DD6AF8 /* TourismAPIService.swift */,
 				E10B16ED26A9233000DD6AF8 /* TourismAPIFetch.swift */,
 				E108F06326AA443900569D0E /* ImageLoaderService.swift */,
+				E108F06F26AB14C700569D0E /* CoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -242,7 +250,6 @@
 				E108F06626AA69A600569D0E /* Detail.storyboard in Resources */,
 				E10B16FA26A9B08600DD6AF8 /* About.storyboard in Resources */,
 				E10B16D726A91C6700DD6AF8 /* Assets.xcassets in Resources */,
-				E10B16D226A91C6600DD6AF8 /* Main.storyboard in Resources */,
 				E10B16F226A94AAE00DD6AF8 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,10 +265,11 @@
 				E108F06426AA443900569D0E /* ImageLoaderService.swift in Sources */,
 				E10B16E926A91DA400DD6AF8 /* TourismAPI.swift in Sources */,
 				E10B16FC26A9B0D300DD6AF8 /* AboutViewController.swift in Sources */,
-				E10B16CF26A91C6600DD6AF8 /* ViewController.swift in Sources */,
 				E10B16F026A9352E00DD6AF8 /* TourismList.swift in Sources */,
 				E10B16F826A9AA7600DD6AF8 /* BookmarkViewController.swift in Sources */,
 				E10B16CB26A91C6600DD6AF8 /* AppDelegate.swift in Sources */,
+				E108F07026AB14C700569D0E /* CoreDataService.swift in Sources */,
+				E108F06C26AB149900569D0E /* Tourism+CoreDataClass.swift in Sources */,
 				E10B16FF26A9B53800DD6AF8 /* TourismTableViewCell.swift in Sources */,
 				E10B16F426A94AE100DD6AF8 /* HomeViewController.swift in Sources */,
 				E10B16CD26A91C6600DD6AF8 /* SceneDelegate.swift in Sources */,
@@ -274,14 +282,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E10B16D026A91C6600DD6AF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E10B16D126A91C6600DD6AF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E10B16D826A91C6700DD6AF8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,6 +8,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tourismLongitude: UILabel!
     @IBOutlet weak var tourismLatitude: UILabel!
     @IBOutlet weak var tourismDescription: UILabel!
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     var placeImage: UIImage?
     var placeName: String?
@@ -19,6 +20,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bookmarkButton.layer.cornerRadius = 10
         initViewData()
     }
 
@@ -28,9 +30,13 @@ class DetailViewController: UIViewController {
             tourismImageView.image = image
             tourismName.text = name
             tourismAddress.text = address
-            tourismLongitude.text = String(longitude)
-            tourismLatitude.text = String(latitude)
+            tourismLongitude.text = String(format: "%.2f", longitude)
+            tourismLatitude.text = String(format: "%.2f", latitude)
             tourismDescription.text = description
         }
+    }
+    
+    @IBAction func bookmarkTapped(sender: UIButton) {
+        print("hehe")
     }
 }

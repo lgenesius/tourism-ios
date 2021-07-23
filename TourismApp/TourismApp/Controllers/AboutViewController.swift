@@ -1,29 +1,13 @@
-//
-//  AboutViewController.swift
-//  TourismApp
-//
-//  Created by Luis Genesius on 22/07/21.
-//
-
 import UIKit
 
 class AboutViewController: UIViewController {
+    
+    @IBOutlet weak var meImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        meImageView.layer.cornerRadius = 10
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
