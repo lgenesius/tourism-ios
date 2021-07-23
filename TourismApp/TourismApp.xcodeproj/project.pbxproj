@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E108F06426AA443900569D0E /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108F06326AA443900569D0E /* ImageLoaderService.swift */; };
+		E108F06626AA69A600569D0E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E108F06526AA69A600569D0E /* Detail.storyboard */; };
+		E108F06826AAAF7200569D0E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108F06726AAAF7200569D0E /* DetailViewController.swift */; };
 		E10B16CB26A91C6600DD6AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16CA26A91C6600DD6AF8 /* AppDelegate.swift */; };
 		E10B16CD26A91C6600DD6AF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16CC26A91C6600DD6AF8 /* SceneDelegate.swift */; };
 		E10B16CF26A91C6600DD6AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B16CE26A91C6600DD6AF8 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E108F06326AA443900569D0E /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		E108F06526AA69A600569D0E /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		E108F06726AAAF7200569D0E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E10B16C726A91C6600DD6AF8 /* TourismApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourismApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10B16CA26A91C6600DD6AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E10B16CC26A91C6600DD6AF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				E10B16F326A94AE100DD6AF8 /* HomeViewController.swift */,
 				E10B16F726A9AA7600DD6AF8 /* BookmarkViewController.swift */,
 				E10B16FB26A9B0D300DD6AF8 /* AboutViewController.swift */,
+				E108F06726AAAF7200569D0E /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 				E10B16F126A94AAE00DD6AF8 /* Home.storyboard */,
 				E10B16F526A9AA6700DD6AF8 /* Bookmark.storyboard */,
 				E10B16F926A9B08600DD6AF8 /* About.storyboard */,
+				E108F06526AA69A600569D0E /* Detail.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			children = (
 				E10B16EB26A91E9900DD6AF8 /* TourismAPIService.swift */,
 				E10B16ED26A9233000DD6AF8 /* TourismAPIFetch.swift */,
+				E108F06326AA443900569D0E /* ImageLoaderService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 				E10B16DA26A91C6700DD6AF8 /* LaunchScreen.storyboard in Resources */,
 				E10B16F626A9AA6700DD6AF8 /* Bookmark.storyboard in Resources */,
 				E10B170026A9B53800DD6AF8 /* TourismTableViewCell.xib in Resources */,
+				E108F06626AA69A600569D0E /* Detail.storyboard in Resources */,
 				E10B16FA26A9B08600DD6AF8 /* About.storyboard in Resources */,
 				E10B16D726A91C6700DD6AF8 /* Assets.xcassets in Resources */,
 				E10B16D226A91C6600DD6AF8 /* Main.storyboard in Resources */,
@@ -245,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10B16EE26A9233000DD6AF8 /* TourismAPIFetch.swift in Sources */,
+				E108F06426AA443900569D0E /* ImageLoaderService.swift in Sources */,
 				E10B16E926A91DA400DD6AF8 /* TourismAPI.swift in Sources */,
 				E10B16FC26A9B0D300DD6AF8 /* AboutViewController.swift in Sources */,
 				E10B16CF26A91C6600DD6AF8 /* ViewController.swift in Sources */,
@@ -256,6 +267,7 @@
 				E10B16CD26A91C6600DD6AF8 /* SceneDelegate.swift in Sources */,
 				E10B16EC26A91E9900DD6AF8 /* TourismAPIService.swift in Sources */,
 				E10B16D526A91C6600DD6AF8 /* TourismApp.xcdatamodeld in Sources */,
+				E108F06826AAAF7200569D0E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
