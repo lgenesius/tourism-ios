@@ -7,7 +7,6 @@ class HomeViewController: UIViewController {
     private let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView.init(style: UIActivityIndicatorView.Style.large)
 
     private let tourism = TourismList()
-    private var images = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +15,6 @@ class HomeViewController: UIViewController {
         
         tourism.loadTourisms {
             
-            self.images.removeAll()
             self.homeTableView.reloadData()
             self.activityIndicator.stopAnimating()
         }
@@ -41,12 +39,14 @@ class HomeViewController: UIViewController {
             let detailStoryboard = UIStoryboard(name: "Detail", bundle: nil)
             let detailVC = detailStoryboard.instantiateViewController(identifier: "detail") as! DetailViewController
             
-            detailVC.placeImage = images[indexPath.row]
             detailVC.placeName = tourisms[indexPath.row].name
             detailVC.placeAddress = tourisms[indexPath.row].address
             detailVC.placeLongitude = tourisms[indexPath.row].longitude
             detailVC.placeLatitude = tourisms[indexPath.row].latitude
             detailVC.placeDescription = tourisms[indexPath.row].description
+            detailVC.placeImageURL = tourisms[indexPath.row].image
+            
+            detailVC.isFromBookmark = false
             
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
@@ -76,7 +76,7 @@ extension HomeViewController: UITableViewDataSource {
             cell.nameLabel.text = tourismList[indexPath.row].name
             cell.addressLabel.text = tourismList[indexPath.row].address
             
-            ImageLoaderService.shared.getImage(urlString: tourismList[indexPath.row].image) { [weak self] (data, error) in
+            ImageLoaderService.shared.getImage(urlString: tourismList[indexPath.row].image) { (data, error) in
                 
                 if error != nil {
                     cell.tourismImageView.image = UIImage(systemName: "xmark.square")
@@ -85,18 +85,15 @@ extension HomeViewController: UITableViewDataSource {
                 
                 cell.tourismImageView.image = UIImage(data: data!)
                 cell.tourismImageView.layer.cornerRadius = 10
-                
-                self?.images.append(cell.tourismImageView.image!)
             }
         }
         else if let error = tourism.error {
             cell.tourismImageView.image = UIImage(systemName: "xmark.square")
             cell.nameLabel.text = error.localizedDescription
             cell.addressLabel.text = ""
-            
-            images.append(cell.tourismImageView.image!)
         }
         
+        cell.selectionStyle = .none
         cell.contentView.layer.cornerRadius = 10
         
         return cell

@@ -1,10 +1,3 @@
-//
-//  CoreDataService.swift
-//  TourismApp
-//
-//  Created by Luis Genesius on 23/07/21.
-//
-
 import Foundation
 import CoreData
 import UIKit
